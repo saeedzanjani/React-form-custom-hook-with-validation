@@ -1,0 +1,25 @@
+.field_container {
+  width: var(--width-full);
+  display: flex;
+  flex-flow: column;
+  align-items: start;
+  margin: var(--margin-y-sm);
+}
+
+.field {
+  width: var(--width-full);
+  padding: 10px 5px;
+  border-radius: var(--radius-sm);
+  outline: none;
+}
+
+.field_label {
+  font-size: 1rem;
+  font-weight: 500;
+  margin: var(--margin-y-sm);
+}
+
+.error {
+  color: red;
+  font-size: 0.8rem;
+}

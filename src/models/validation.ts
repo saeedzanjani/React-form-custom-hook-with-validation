@@ -1,0 +1,1 @@
+export type SchemaType = object | any

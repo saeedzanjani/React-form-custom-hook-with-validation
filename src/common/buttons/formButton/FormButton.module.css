@@ -1,0 +1,10 @@
+.root {
+    width: var(--width-full);
+    border: none;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    margin: 5px 0;
+}

@@ -1,0 +1,1 @@
+export type FormValue = {username: string; email: string; password: string;} | any
