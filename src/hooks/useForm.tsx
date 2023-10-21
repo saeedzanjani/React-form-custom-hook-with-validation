@@ -1,8 +1,13 @@
 import React, { useCallback, useState } from "react";
 import { SchemaType } from "../models";
 
-const useForm = (validate?: Function, schema?: SchemaType, submitCallback?: any ) => {
-  const [values, setValues] = useState<any>({});
+// PropsTypes
+type InitialStateType = {
+  [key: string | symbol]: string;
+}
+
+const useForm = (initialState: InitialStateType, validate?: Function, schema?: SchemaType, submitCallback?: Function) => {
+  const [values, setValues] = useState<any>(initialState);
   const [errors, setErrors] = useState<any>({});
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {

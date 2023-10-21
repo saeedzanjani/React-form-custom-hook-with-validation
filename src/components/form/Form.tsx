@@ -15,7 +15,8 @@ const schema: SchemaType = Yup.object().shape({
 });
 
 const Form = () => {
-  const { handleChange, handleSubmit, errors } = useForm(
+  const { values, handleChange, handleSubmit, errors } = useForm(
+    {username: '', email: '', password: ''},
     handleFormError,
     schema
   );
@@ -24,6 +25,7 @@ const Form = () => {
     <form onSubmit={handleSubmit} className={styles.root}>
       <FormField
         fieldName="username"
+        fieldValue={values.username}
         fieldPlaceHolder="username"
         label="Username"
         handleFieldChange={handleChange}
@@ -31,6 +33,7 @@ const Form = () => {
       />
       <FormField
         fieldName="email"
+        fieldValue={values.email}
         fieldPlaceHolder="email"
         label="Email"
         handleFieldChange={handleChange}
@@ -38,6 +41,7 @@ const Form = () => {
       />
       <FormField
         fieldName="password"
+        fieldValue={values.password}
         fieldPlaceHolder="password"
         label="Password"
         handleFieldChange={handleChange}
