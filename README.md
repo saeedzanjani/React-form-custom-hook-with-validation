@@ -1,5 +1,7 @@
 # Getting Started with Create React App
 
+React useForm custom hook with Yup validation without Formik or React jook form.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
